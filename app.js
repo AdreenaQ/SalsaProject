@@ -4,11 +4,10 @@ var express = require("express");
 var app = express();
 
 app.set("view engine", "ejs");
+app.use(express.static('public'));
 
 app.get("/", function(req, res){
-    var jsondata = fs.readFileSync('data.json');
-
-    var data = JSON.parse(jsondata);
+    var data = readJsonFile('data.json');
 
     res.render("home");
 });
@@ -16,3 +15,9 @@ app.get("/", function(req, res){
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log("Server is listening...!");
 });
+
+function readJsonFile(path){
+    var json = fs.readFileSync(path);
+
+    return JSON.parse(json);
+}
