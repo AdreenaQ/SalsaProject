@@ -1,26 +1,24 @@
-[{
-  "name": "Fun salsa times",
-  "location": "Central London",
-  "description": "Fun for over 50s to learn salsa",
-  "time": "3pm",
-  "day": "thursday"
-},
-{
-  
-  "name": "Salsa Salsa",
-  "location": "West London",
-  "description": "100% salsa",
-  "time": "8pm",
-  "day": "Tuesday"
-},
-
-{
-  "name": "Pexeca Salsa",
-  "location": "Holborn",
-  "description": "Best social night",
-  "time": "8pm",
-  "day": "Friday"
-}     
-      
-      
-  }]
+[
+  {
+    "name": "Fun salsa times",
+    "location": "Central London",
+    "description": "Fun for over 50s to learn salsa",
+    "time": "3pm",
+    "day": "thursday"
+  },
+  {
+    
+    "name": "Salsa Salsa",
+    "location": "West London",
+    "description": "100% salsa",
+    "time": "8pm",
+    "day": "Tuesday"
+  },
+  {
+    "name": "Pexeca Salsa",
+    "location": "Holborn",
+    "description": "Best social night",
+    "time": "8pm",
+    "day": "Friday"
+  }     
+]
