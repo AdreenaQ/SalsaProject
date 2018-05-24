@@ -1,0 +1,28 @@
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Welcome Salsa Events London!</h1>
+            <p>View the largest database of latin events in London</p>
+            <p><a class="btn btn-primary" href="/salsaevents/new">Know of a different event? Let us know here!</a></p>
+        </div>
+    </header>
+    
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+    
+        <% salsaevents.forEach(function(salsaevent){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img style="width: 30%" class="img-fluid" src = "https://cbsla.files.wordpress.com/2014/11/cover_sexysalsa.jpg">
+                    <div class="caption">
+                        <h4> <%= salsaevent.name %> </h4>
+                        <h4> <%= salsaevent.location %> </h4>
+                        <h4> <%= salsaevent.description %> </h4>
+                        <h4> <%= salsaevent.day %> </h4>
+                        <h4> <%= salsaevent.time %> </h4>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+        
+    </div>
+</div>    
