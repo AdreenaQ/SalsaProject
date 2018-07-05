@@ -1,3 +1,71 @@
-body {
-    background-color: powderblue;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.7;
+	color: #777;
+	padding: 20px;
+}
+
+nav {
+    float: right;
+    height: 35px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    height: 85vh;
+    position: relative;
+    background-color: powderblue;
+    clip: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.heading-primary {
+    font-size: 36px;
+}
+
+
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 100px;
+}
+
+.btn-white {
+    background-color: white;
+    color: #777;
+}
+
+/*.logo {*/
+/*    height: 35px;*/
+/*}*/
